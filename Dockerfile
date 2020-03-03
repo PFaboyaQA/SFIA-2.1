@@ -4,10 +4,10 @@ WORKDIR /app
 
 COPY requiremets.txt .
 
-EXPOSE 5000
+EXPOSE 5001
 
 RUN pip install -r requiremets.txt
 
 ENTRYPOINT '/usr/local/bin/python' 'app.py'
 
-COPY . . 
+COPY . .
